@@ -14,7 +14,8 @@ Italic : *This is Italic*
 
 --Quoting
 
-Quoting line :   > This is a line
+Quoting line :
+> This is a line
 
 Quoting code :   ``` This is a code ```
 
