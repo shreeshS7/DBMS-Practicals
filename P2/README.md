@@ -4,7 +4,7 @@
 
 ### DDL
 
-> Create, Alter, Delete
+> Create, Alter, Drop
 
 # Table
 
@@ -76,11 +76,8 @@ Query OK, 0 rows affected (0.46 sec)
 *Again create students table, insert some values and use it for view*
 
 ```
-mysql> create table students(
-    -> id integer primary key,
-    -> name varchar(20),
-    -> year integer);
-Query OK, 0 rows affected (0.64 sec)
+mysql> create table students( id integer primary key, name varchar(20), year integer);
+
 ```
 
 ```
@@ -129,3 +126,128 @@ mysql> select * from stud;
 **Alter View**
 
 > alter view view_name as select something from table;
+
+```
+mysql> alter view stud as select name,year from students;
+Query OK, 0 rows affected (0.14 sec)
+
+mysql> select * from stud;
++---------+------+
+| name    | year |
++---------+------+
+| Shree   |    3 |
+| Krishna |    2 |
+| Govind  |    4 |
+| Madhav  |    1 |
++---------+------+
+4 rows in set (0.00 sec)
+
+```
+
+**Drop View**
+
+> drop view view_name;
+
+```
+mysql> drop view stud;
+Query OK, 0 rows affected (0.11 sec)
+
+```
+
+
+# Index
+
+**Create Index**
+
+> create index index_name on table_name(column_name);
+
+```
+mysql> create index stud_index on students(name);
+Query OK, 0 rows affected (0.97 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+```
+
+**Alter OR Drop**
+
+> alter table table_name drop index index_name;
+
+```
+mysql> alter table students drop index stud_index;
+Query OK, 0 rows affected (0.34 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+```
+
+
+# Sequence
+
+**Create Sequence while creating a table**
+
+```
+mysql> create table user(
+    -> id integer auto_increment,
+    -> primary key(id),
+    -> name varchar(20));
+Query OK, 0 rows affected (0.92 sec)
+```
+
+**Alter previously created table**
+
+```
+mysql> alter table students modify id integer auto_increment;
+Query OK, 4 rows affected (1.53 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+```
+
+**Drop Sequence**
+
+*For dropping the sequence we just remove auto_increment constraint*
+
+```
+mysql> alter table students modify id integer;
+Query OK, 4 rows affected (1.21 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+```
+
+# Synonym
+
+*Here we will be using Oracle's Sqlplus since Mysql has no support for Synonym*
+
+*Again we will create a table in sqlplus and insert some values*
+
+```
+Connected to:
+Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+
+SQL> create table students( id integer primary key, name varchar(20), year integer);
+
+Table created.
+
+```
+
+```
+insert into students values (1,'Shree',3);
+insert into students values (2,'Krishna',2);
+insert into students values (3,'Govind',4);
+insert into students values (4,'Madhav',1);
+```
+
+**Create Synonym**
+
+> create synonym synonym_name for table_name;
+
+```
+SQL> create synonym stud_syn for students;
+
+```
+
+**Drop Synonym**
+
+> drio synonym synonym_name;
+
+```
+SQL> drop synonym stud_syn;
+
+```
