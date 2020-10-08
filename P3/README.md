@@ -142,6 +142,8 @@ SQL> select * from employee union select * from employee2;
 
 ```
 
+> psst: Copying clean table from Oracle's Sqlplus is a tough task
+
 ```
 SQL> select * from employee intersect select * from employee2;
 
