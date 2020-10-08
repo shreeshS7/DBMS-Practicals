@@ -1,32 +1,12 @@
 
---Heading
 
-# The largest heading
-## The second largest heading
-### the smallest heading
+# A Complete Walkthrough For DBMS Practicals
+                              **~By Shreesh**
 
 
---Styling
+## Group A
 
-Bold : **This is bold text**
-Italic : *This is Italic*
-
-
---Quoting
-
-Quoting line :
-> This is a line
-
-Quoting code :   ``` This is a code ```
-
-
---Lists
-
-- r
-- g
-- b
-
-
-1. A
-2. B
-3. C
+- [**P2**](https://github.com/shreeshS7/DBMS-Practicals/tree/master/P2)
+- [**P3**]()
+- [**P4**]()
+- [**P5**]()
