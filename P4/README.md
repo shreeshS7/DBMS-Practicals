@@ -228,6 +228,6 @@ Rows matched: 4  Changed: 4  Warnings: 0
 ```
 **VIEW**
 
-[**View**](https://shreeshs7.github.io/DBMS-Practicals/P2)
+[**View**](https://shreeshs7.github.io/DBMS-Practicals/P2/#view)
 
 *Refer view from Practical-2*
