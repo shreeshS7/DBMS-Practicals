@@ -245,7 +245,7 @@ SQL> create synonym stud_syn for students;
 
 **Drop Synonym**
 
-> drio synonym synonym_name;
+> drop synonym synonym_name;
 
 ```
 SQL> drop synonym stud_syn;
