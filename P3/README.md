@@ -144,6 +144,7 @@ SQL> select * from employee union select * from employee2;
 
 > psst: Copying clean table from Oracle's Sqlplus is a tough task
 
+
 ```
 SQL> select * from employee intersect select * from employee2;
 
@@ -173,6 +174,7 @@ SQL> delete from employee where salary < 2000;
 ```
 
 > Arithmetic + Comparison operator
+
 ```
 SQL> delete from employee where age+20 >= 40;
 
