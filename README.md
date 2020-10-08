@@ -6,7 +6,7 @@
 
 ## Group A
 
-- [**P2**](https://github.com/shreeshS7/DBMS-Practicals/tree/master/P2)
-- [**P3**](https://github.com/shreeshS7/DBMS-Practicals/tree/master/P3)
-- [**P4**](https://github.com/shreeshS7/DBMS-Practicals/tree/master/P4)
-- [**P5**](https://github.com/shreeshS7/DBMS-Practicals/tree/master/P5)
+- [**P2**](https://shreeshs7.github.io/DBMS-Practicals/P2)
+- [**P3**](https://shreeshs7.github.io/DBMS-Practicals/P3)
+- [**P4**](https://shreeshs7.github.io/DBMS-Practicals/P4)
+- [**P5**](https://shreeshs7.github.io/DBMS-Practicals/P5)
