@@ -6,7 +6,7 @@
 
 > Create, Alter, Drop
 
-# Table
+## Table
 
 **Create Table**
 
@@ -71,7 +71,7 @@ Query OK, 0 rows affected (0.46 sec)
 ```
 
 
-# View
+## View
 
 *Again create students table, insert some values and use it for view*
 
@@ -155,7 +155,7 @@ Query OK, 0 rows affected (0.11 sec)
 ```
 
 
-# Index
+## Index
 
 **Create Index**
 
@@ -180,7 +180,7 @@ Records: 0  Duplicates: 0  Warnings: 0
 ```
 
 
-# Sequence
+## Sequence
 
 **Create Sequence while creating a table**
 
@@ -211,7 +211,7 @@ Query OK, 4 rows affected (1.21 sec)
 Records: 4  Duplicates: 0  Warnings: 0
 ```
 
-# Synonym
+## Synonym
 
 *Here we will be using Oracle's Sqlplus since Mysql has no support for Synonym*
 
