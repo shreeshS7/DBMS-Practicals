@@ -1,7 +1,7 @@
 
 
 # A Complete Walkthrough For DBMS Practicals
-                              **By Shreesh**
+*By Shreesh*
 
 
 ## Group A
