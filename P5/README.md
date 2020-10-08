@@ -73,7 +73,11 @@ begin
 end;
 /
 ```
-> NOTE: sysdate is an inbuilt-function which gives you current date
+
+
+> NOTE: sysdate is an inbuilt-function which gives you current date of your system
+
+
 ```
 SQL> execute finer(1,'CN');
 SQL> execute finer(1,'TOC');
@@ -87,9 +91,9 @@ SQL> select * from fine;
 
     ROLLNO FINE_DATE	    AMT
 ---------- --------- ----------
-	 1       08-OCT-20	     75
-	 1       08-OCT-20	      0
-	 2       08-OCT-20	     90
+	 1 08-OCT-20	     75
+	 1 08-OCT-20	      0
+	 2 08-OCT-20	     90
 
 ```
 
@@ -98,12 +102,13 @@ SQL> select * from borrower;
 
     ROLLIN NAME 		DATEOFISS NAMEOFBOOK	       ST
 ---------- -------------------- --------- -------------------- --
-	 1         Shree		08-SEP-20    CN		         R
-	 2         Krishna	20-SEP-20    DBMS		       R
-	 3         Madhav		25-OCT-20    ISEE		       I
-	 4         Mukund		03-OCT-20    SEPM		       I
-	 5         Mohan		27-OCT-20    TOC		       I
-	 1         Shree		25-SEP-20    TOC		       R
+	 1 Shree		08-SEP-20 CN		       R
+	 2 Krishna		20-SEP-20 DBMS		       R
+	 3 Madhav		25-OCT-20 ISEE		       I
+	 4 Mukund		03-OCT-20 SEPM		       I
+	 5 Mohan		27-OCT-20 TOC		       I
+	 1 Shree		25-SEP-20 TOC		       R
 
 6 rows selected.
+
 ```
