@@ -226,8 +226,8 @@ Query OK, 4 rows affected (0.21 sec)
 Rows matched: 4  Changed: 4  Warnings: 0
 
 ```
-**View**
+**VIEW**
 
-[View](https://github.com/shreeshS7/DBMS-Practicals/tree/master/P2#view)
+[**View**](https://github.com/shreeshS7/DBMS-Practicals/tree/master/P2#view)
 
 *Refer view from Practical-2*
