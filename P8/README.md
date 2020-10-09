@@ -18,6 +18,7 @@ Table created.
 
 > INSERT some values
 
+
 ```
 insert into books values (1,'Shree','CN','I');
 insert into books values (2,'Krishna','DBMS','I');
@@ -27,6 +28,8 @@ insert into books values (4,'Govind','SEPM','I');
 ```
 
 > Create Audit table
+
+
 ```
 SQL> create table books_audit(
   2  id integer primary key,
@@ -39,6 +42,7 @@ Table created.
 ```
 
 > And here comes the trigger
+
 
 ```
 create or replace trigger backup
@@ -54,10 +58,12 @@ for each row
 
 > NOTE: Here trigger name is backup
 
+
 > Output
 
 
 **UPDATE**
+
 
 ```
 SQL> update books set status='R' where id = 3;
@@ -77,6 +83,8 @@ SQL> select * from books_audit;
 ```
 
 **DELETE**
+
+
 ```
 SQL> delete from books where id=1;
 Shree
@@ -85,7 +93,6 @@ Shree
 
 ```
 
-> books_audit
 ```
 SQL> select * from books_audit;
 
@@ -96,7 +103,6 @@ SQL> select * from books_audit;
 
 ```
 
-> books
 
 ```
 SQL> select * from books;
