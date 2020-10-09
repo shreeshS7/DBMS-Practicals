@@ -35,6 +35,7 @@ SQL> create table nroll(
 Table created.
 
 ```
+> INSERT some values
 
 ```
 insert into nroll values(1,'Shree','TE');
@@ -43,8 +44,23 @@ insert into nroll values(2,'Krishna','BE');
 ```
 
 > Key Statement here is :
-> select * from oroll minus select * from nroll;
 
+**select * from oroll minus select * from nroll;**
+
+*OR*
+
+**select * from oroll where roll not in(select roll from nroll);**
+
+
+```
+SQL> select * from oroll minus select * from nroll;
+
+      ROLL NAME       YEA
+---------- ---------- ---
+	 3 Madhav     SE
+	 4 Govind     TE
+
+```
 
 ```
 declare
