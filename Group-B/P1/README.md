@@ -6,7 +6,7 @@
 > Fire-up your terminal and type mongo (for Ubuntu)
 
 
-> show dbs;  -- TO check databases we have
+> show dbs;     -- To check databases we have
 
 ```
 > show dbs;
@@ -44,7 +44,7 @@ db.dropDatabase();
 
 ## Collection (Table)
 
-> Again create database practical because we previosly dropped it.
+> Again create database practical because we previously dropped it.
 
 **Create Collection**
 
