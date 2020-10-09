@@ -18,3 +18,4 @@
 ## Group B
 
 - [**P1**](https://shreeshs7.github.io/DBMS-Practicals/Group-B/P1)
+- [**P2**](https://shreeshs7.github.io/DBMS-Practicals/Group-B/P2)
