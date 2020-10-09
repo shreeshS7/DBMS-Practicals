@@ -241,6 +241,20 @@ insert into students values (4,'Madhav',1);
 ```
 SQL> create synonym stud_syn for students;
 
+Synonym created.
+
+```
+
+```
+SQL> select * from stud_syn;
+
+	ID NAME 		      YEAR
+---------- -------------------- ----------
+	 1 Shree			 3
+	 2 Krishna			 2
+	 3 Govind			 4
+	 4 Madhav			 1
+
 ```
 
 **Drop Synonym**
@@ -249,5 +263,7 @@ SQL> create synonym stud_syn for students;
 
 ```
 SQL> drop synonym stud_syn;
+
+Synonym dropped.
 
 ```
