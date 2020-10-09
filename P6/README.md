@@ -20,9 +20,9 @@ Table created.
 
 ```
 insert into oroll values(1,'Shree','TE');
-insert into oroll values(1,'Shree','TE');
-insert into oroll values(1,'Shree','TE');
-insert into oroll values(1,'Shree','TE');
+insert into oroll values(2,'Krishna','BE');
+insert into oroll values(3,'Madhav','SE');
+insert into oroll values(4,'Govind','TE');
 
 ```
 
@@ -37,8 +37,53 @@ Table created.
 ```
 
 ```
-insert into oroll values(1,'Shree','TE');
-insert into oroll values(1,'Shree','TE');
-insert into oroll values(1,'Shree','TE');
+insert into nroll values(1,'Shree','TE');
+insert into nroll values(2,'Krishna','BE');
+
+```
+
+> Key Statement here is :
+> select * from oroll minus select * from nroll;
+
+
+```
+declare
+  c_roll oroll.roll%type;
+  c_name oroll.name%type;
+  c_year oroll.year%type;
+  cursor c_temp is select * from oroll minus select * from nroll;
+begin
+  open c_temp;
+    loop
+      fetch c_temp into c_roll,c_name,c_year;
+      exit when c_temp%notfound;
+      insert into nroll values(c_roll,c_name,c_year);
+      dbms_output.put_line(c_roll ||' '|| c_name ||' '|| c_year);
+    end loop;
+  close c_temp;
+end;
+/
+
+```
+
+> Output
+
+```
+3 Madhav SE
+4 Govind TE
+
+PL/SQL procedure successfully completed.
+
+```
+
+```
+SQL> select * from nroll;
+
+      ROLL NAME       YEA
+---------- ---------- ---
+	 1 Shree      TE
+	 2 Krishna    BE
+	 3 Madhav     SE
+	 4 Govind     TE
 
 ```
